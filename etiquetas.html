@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicacion de Etiquetas Semanticas.</title>
+        <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Entendiendo las Etiquetas Semanticas HTML5.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO.</a></li>
+                <li><a href="productos.html">PRODUCTOS.</a></li>
+                <li><a href="blog.html">BLOG.</a></li>
+                <li><a href="contacto.html">CONTACTO.</a></li>
+                <li><a href="sobre-mi.html">SOBRE MI.</a></li>
+                <li><a href="etiquetas.html">ETIQUETAS.</a></li>
+                <li><a href="galeria.html">GALERIA.</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>¿Qué son las Etiquetas Semánticas?</h2>
+            <p>Las etiquetas semánticas HTML5 proporcionan significado a las diferentes partes de una página web. A diferencia de las etiquetas no semánticas (como <code>&lt;div&gt;</code> y <code>&lt;span&gt;</code>) que no tienen significado por sí mismas, las etiquetas semánticas describen el propósito de su contenido, lo que mejora la legibilidad para desarrolladores y motores de búsqueda, y la accesibilidad para lectores de pantalla.</p>
+        </section>
+
+        <section>
+            <h3>1. &lt;article&gt;</h3>
+            <p>La etiqueta <code>&lt;article&gt;</code> se utiliza para envolver contenido independiente y autosuficiente. Piensa en ella como una entrada de blog, un artículo de noticias, un comentario de usuario, o cualquier pieza de contenido que podría distribuirse y tener sentido por sí misma fuera del contexto de la página principal.</p>
+            <h4>Ejemplo de Uso:</h4>
+            <pre><code>
+                &lt;article&gt;
+    &lt;h2&gt;Mi Primera Entrada de Blog&lt;/h2&gt;
+    &lt;p&gt;Este es el contenido de mi entrada, que puede leerse de forma independiente.&lt;/p&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Publicado el &lt;time datetime="2025-05-22"&gt;22 de Mayo de 2025&lt;/time&gt;&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/article&gt;
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>2. &lt;section&gt;</h3>
+            <p>La etiqueta <code>&lt;section&gt;</code> agrupa contenido relacionado temáticamente. Sirve para dividir el contenido de una página en secciones lógicas, como una sección "Sobre Nosotros", "Productos", o "Contactos". Cada <code>&lt;section&gt;</code> debe tener idealmente un encabezado (<code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>).</p>
+            <h4>Ejemplo de Uso:</h4>
+            <pre><code>
+&lt;section&gt;
+    &lt;h2&gt;Nuestros Servicios&lt;/h2&gt;
+    &lt;p&gt;Ofrecemos una variedad de servicios de desarrollo web.&lt;/p&gt;
+    &lt;!-- Más contenido relacionado con servicios --&gt;
+&lt;/section&gt;
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>3. &lt;nav&gt;</h3>
+            <p>La etiqueta <code>&lt;nav&gt;</code> se utiliza para agrupar enlaces de navegación principal. Contiene los enlaces que son esenciales para navegar por el sitio web, como el menú principal, los enlaces a secciones importantes, o el índice de un documento largo.</p>
+            <h4>Ejemplo de Uso:</h4>
+            <pre><code>
+&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="/"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="/productos"&gt;Productos&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="/contacto"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>4. &lt;header&gt;</h3>
+            <p>La etiqueta <code>&lt;header&gt;</code> representa contenido introductorio o un grupo de ayudas a la navegación. Puede contener encabezados (<code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>), un logotipo, o incluso la etiqueta <code>&lt;nav&gt;</code> para el menú principal del sitio o de una sección.</p>
+            <h4>Ejemplo de Uso:</h4>
+            <pre><code>
+&lt;header&gt;
+    &lt;h1&gt;Nombre de Mi Sitio&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;!-- Enlaces de navegación --&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>5. &lt;footer&gt;</h3>
+            <p>La etiqueta <code>&lt;footer&gt;</code> representa el pie de página de su sección más cercana o de todo el documento. Generalmente contiene información como derechos de autor, enlaces a documentos relacionados, información de contacto, o enlaces a redes sociales.</p>
+            <h4>Ejemplo de Uso:</h4>
+            <pre><code>
+&lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2025 Mi Empresa. Todos los derechos reservados.&lt;/p&gt;
+    &lt;a href="/politica-privacidad"&gt;Política de Privacidad&lt;/a&gt;
+&lt;/footer&gt;
+            </code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Sitio Semántico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+</body>
+</html>
